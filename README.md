@@ -2,7 +2,7 @@
 
 A futuristic New Year celebration website for developers, featuring stunning 3D animations, parallax effects, and motivational messages. Built with React, TypeScript, and Tailwind CSS.
 
-![New Year 2025](https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80)
+![New Year 2025](public/home.png)
 
 ## ✨ Features
 
@@ -28,8 +28,8 @@ A futuristic New Year celebration website for developers, featuring stunning 3D 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/new-year-2025.git
-cd new-year-2025
+git clone https://github.com/Sudhaanshuu/New-Year-2025.git
+cd New-Year-2025
 ```
 
 2. Install dependencies:
@@ -51,13 +51,13 @@ npm run build
 
 ```
 src/
-├── components/         # React components
-│   ├── HeroSection/   # Main hero section with 3D rocket
-│   ├── CountdownTimer/# New Year countdown
-│   ├── ParallaxStars/ # Background effects
+├── components/         
+│   ├── HeroSection/   
+│   ├── CountdownTimer/
+│   ├── ParallaxStars/ 
 │   └── ...
-├── styles/            # Global styles and animations
-└── App.tsx           # Main application component
+├── styles/            
+└── App.tsx           
 ```
 
 ## 🎨 Features Breakdown
@@ -100,9 +100,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Links
 
-- [Live Demo](https://your-demo-link.netlify.app)
-- [GitHub Repository](https://github.com/yourusername/new-year-2025)
+- [Live Demo](https://sukunewyear2025.netlify.app/)
+- [GitHub Repository](https://github.com/Sudhaanshuu/New-Year-2025.git)
 
 ---
 
-Made with 💜 by developers, for developers.
+Made with 💜 by Sudhanshu, for Students.
