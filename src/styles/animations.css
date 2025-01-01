@@ -1,0 +1,132 @@
+/* Base Animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  @keyframes glow {
+    0%, 100% { text-shadow: 0 0 20px rgba(147, 51, 234, 0.5); }
+    50% { text-shadow: 0 0 40px rgba(147, 51, 234, 0.8); }
+  }
+  
+  @keyframes rotate3d {
+    from { transform: rotate3d(1, 1, 1, 0deg); }
+    to { transform: rotate3d(1, 1, 1, 360deg); }
+  }
+  
+  /* Rocket Animations */
+  @keyframes rocketLaunch {
+    0% { 
+      transform: translateY(100vh) scale(0.5);
+      opacity: 0;
+    }
+    20% { 
+      transform: translateY(60vh) scale(0.7);
+      opacity: 1;
+    }
+    100% { 
+      transform: translateY(-20vh) scale(1);
+      opacity: 0;
+    }
+  }
+  
+  /* Flame Animations */
+  @keyframes flicker {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
+  
+  /* Firework Animations */
+  @keyframes explode {
+    0% { transform: scale(0); opacity: 1; }
+    100% { transform: scale(1.5); opacity: 0; }
+  }
+  
+  @keyframes particle-animation {
+    0% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(var(--x), var(--y));
+      opacity: 0;
+    }
+  }
+  
+  /* Title Animation */
+  @keyframes titleReveal {
+    0% { 
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% { 
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply Animations */
+  .float { animation: float 3s ease-in-out infinite; }
+  .glow { animation: glow 2s ease-in-out infinite; }
+  .rotate3d { animation: rotate3d 15s linear infinite; }
+  .rocket-launch { animation: rocketLaunch 3s ease-out forwards; }
+  
+  /* Flame Styles */
+  .rocket-flames {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .flame {
+    position: absolute;
+    bottom: 0;
+    width: 16px;
+    height: 40px;
+    border-radius: 50% 50% 20% 20%;
+    animation: flicker 0.2s ease-in infinite alternate;
+  }
+  
+  .flame-red {
+    background: #ff4d4d;
+    z-index: 3;
+  }
+  
+  .flame-orange {
+    background: #ff9933;
+    height: 30px;
+    z-index: 2;
+  }
+  
+  .flame-yellow {
+    background: #ffff66;
+    height: 20px;
+    z-index: 1;
+  }
+  
+  /* Firework Styles */
+  .firework {
+    position: absolute;
+    animation: explode 1s ease-out forwards;
+  }
+  
+  .particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: white;
+    animation: particle-animation 1s ease-out forwards;
+  }
+  
+  /* Space Object Animations */
+  .twinkle-0 { animation: glow 1.5s ease-in-out infinite; }
+  .twinkle-1 { animation: glow 2s ease-in-out infinite 0.5s; }
+  .twinkle-2 { animation: glow 2.5s ease-in-out infinite 1s; }
+  
+  .float-slow { animation: float 6s ease-in-out infinite; }
+  .rotate-slow { animation: rotate3d 30s linear infinite; }
+  
+  /* Title Styles */
+  .title-reveal { animation: titleReveal 1s ease-out forwards; }
